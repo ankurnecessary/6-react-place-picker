@@ -44,10 +44,10 @@ Working with:
 38. Using key attribute and it's value as the array index in repeating element in the JSX is a bad idea. Instead we should use id in the array elements as the value of the key attribute. It increases performance and remove functionality issues.
 39. Using key attribute in the component tag is another pattern that could help us in re-initializing the component. So, it is like reloading a component with new prop values instead of using useEffect() to do so. It is like using a component afresh.
 40. If we have multiple state functions being fired at once, may be within a function, then that doesn't mean that our component will also get rerendered multiple times (once for each state function call). Instead it will render only once.
-41. We can use millionjs to increase the speed and performance of our react project.
+41. We can use millionjs to increase the speed and performance of our react project. It works on state changing and checking algorithm.
 42. A library like gotbootstrap.com in react is [Material Tailwind](https://www.material-tailwind.com/docs/react/accordion).
 43. Next.js or Remix
-44. 
+44. [Why custom hook](https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/39837042#content)
 
 [Eslint configuration - Best linting configuration is to use "format on save" and don't use "formatting option of ES Lint"](https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/8231814#questions/20789494)
 
