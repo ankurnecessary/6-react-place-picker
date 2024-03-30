@@ -16,11 +16,12 @@ export function useFetch (fetchFn, initialValue) {
       setIsFetching(false)
     }
     fetchPlaces()
-  }, [])
+  }, [fetchFn])
 
   return {
     isFetching,
     error,
-    fetchedData
+    fetchedData,
+    setFetchedData
   }
 }
