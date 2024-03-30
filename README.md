@@ -44,10 +44,14 @@ Working with:
 38. Using key attribute and it's value as the array index in repeating element in the JSX is a bad idea. Instead we should use id in the array elements as the value of the key attribute. It increases performance and remove functionality issues.
 39. Using key attribute in the component tag is another pattern that could help us in re-initializing the component. So, it is like reloading a component with new prop values instead of using useEffect() to do so. It is like using a component afresh.
 40. If we have multiple state functions being fired at once, may be within a function, then that doesn't mean that our component will also get rerendered multiple times (once for each state function call). Instead it will render only once.
-41. We can use millionjs to increase the speed and performance of our react project. It works on state changing and checking algorithm.
+41. We can use [millionjs](https://million.dev/) to increase the speed and performance of our react project. It works on state changing and checking algorithm.
 42. A library like gotbootstrap.com in react is [Material Tailwind](https://www.material-tailwind.com/docs/react/accordion).
 43. Next.js or Remix
-44. [Why custom hook](https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/39837042#content)
+44. General rules of using hooks.
+    1. Only call Hooks in Component or Other custom hook function.
+    2. Only call hooks on top level i.e. directly inside a component function but not in any if block or function inside component function.
+45. [Why custom hook?](https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/39837042#content). Suppose we have created a component and it is being used in multiple places later on. The component needs some data to be passed in through one of it's props. We are fetching this data from different HTTP endpoints at all the places where we have used this component. That means there is some code pattern that is common among all the places where the component is used and re-used. To decrease the code repetition related to the common code pattern we use **custom hooks**.
+46. A custom hook's function name should start with the word 'use' like 'useFetch()' etc.
 
 [Eslint configuration - Best linting configuration is to use "format on save" and don't use "formatting option of ES Lint"](https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/8231814#questions/20789494)
 
